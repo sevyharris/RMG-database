@@ -7,7 +7,6 @@ longDesc = """
 Put kinetic parameters for reactions to use as a training set for fitting
 group additivity values in this file.
 """
-
 entry(
     index = 0,
     label = "C2H5F <=> C2H4 + HF",
@@ -202,7 +201,6 @@ entry(
 https://pubs.acs.org/doi/pdf/10.1021/jp709796n
 """,
 )
-
 
 entry(
     index = 14,

@@ -94,11 +94,11 @@ entry(
 """
 1 *4 Cd u0 r0 {2,S} {3,D}
 2 *5 Cd u0 {1,S} {4,D}
-3 *3 Cd u0 {1,D} {7,[S,D,T,B,Q]}
+3 *3 Cd u0 {1,D} {5,[S,D,T,B,Q]}
 4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,[D,T]}
-6 *2 Cd u0 {5,[D,T]}
-7    C  ux {3,[S,D,T,B,Q]}
+5    C  ux {3,[S,D,T,B,Q]}
+6 *1 Cd u0 {7,[D,T]}
+7 *2 Cd u0 {6,[D,T]}
 """,
     kinetics = None,
 )
@@ -109,13 +109,13 @@ entry(
     group = 
 """
 1 *4 Cd u0 r0 {2,S} {3,D}
-2 *5 Cd u0 {1,S} {4,D}
-3 *3 Cd u0 {1,D} {7,[S,D,T,B,Q]}
-4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,[D,T]} {8,[S,D,T,B,Q]}
-6 *2 Cd u0 {5,[D,T]}
-7    C  ux {3,[S,D,T,B,Q]}
-8    C  ux {5,[S,D,T,B,Q]}
+2 *5 Cd u0 {1,S} {5,D}
+3 *3 Cd u0 {1,D} {6,[S,D,T,B,Q]}
+4 *1 Cd u0 {7,[D,T]} {8,[S,D,T,B,Q]}
+5 *6 Cd u0 {2,D}
+6    C  ux {3,[S,D,T,B,Q]}
+7 *2 Cd u0 {4,[D,T]}
+8    C  ux {4,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -126,14 +126,14 @@ entry(
     group = 
 """
 1 *4 Cd u0 r0 {2,S} {3,D}
-2 *5 Cd u0 {1,S} {4,D}
+2 *5 Cd u0 {1,S} {6,D}
 3 *3 Cd u0 {1,D} {7,S}
-4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,D} {8,[S,D,T,B,Q]}
-6 *2 Cd u0 {5,D} {9,S}
+4 *1 Cd u0 {5,D} {8,[S,D,T,B,Q]}
+5 *2 Cd u0 {4,D} {9,S}
+6 *6 Cd u0 {2,D}
 7    C  u0 {3,S}
-8    C  ux {5,[S,D,T,B,Q]}
-9    C  u0 {6,S}
+8    C  ux {4,[S,D,T,B,Q]}
+9    C  u0 {5,S}
 """,
     kinetics = None,
 )
@@ -143,16 +143,16 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-3Cd-R_Ext-5Cd-R_Ext-6COCSCdCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt-R_Ext-8R!H-R",
     group = 
 """
-1  *4 Cd  u0 r0 {2,S} {3,D}
-2  *5 Cd  u0 {1,S} {4,D}
-3  *3 Cd  u0 {1,D} {7,S}
-4  *6 Cd  u0 {2,D}
-5  *1 Cd  u0 {6,D} {8,[S,D,T,B,Q]}
-6  *2 Cd  u0 {5,D} {9,S}
-7     C   u0 r0 {3,S}
-8     C   ux {5,[S,D,T,B,Q]} {10,[S,D,T,B,Q]}
-9     C   u0 r0 {6,S}
-10    R!H ux {8,[S,D,T,B,Q]}
+1  *4 Cd  u0 r0 {3,S} {4,D}
+2  *1 Cd  u0 {5,D} {6,[S,D,T,B,Q]}
+3  *5 Cd  u0 {1,S} {7,D}
+4  *3 Cd  u0 {1,D} {8,S}
+5  *2 Cd  u0 {2,D} {9,S}
+6     C   ux {2,[S,D,T,B,Q]} {10,[S,D,T,B,Q]}
+7  *6 Cd  u0 {3,D}
+8     C   u0 r0 {4,S}
+9     C   u0 r0 {5,S}
+10    R!H ux {6,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -163,14 +163,14 @@ entry(
     group = 
 """
 1 *4 Cd  u0 r0 {2,S} {3,D}
-2 *5 Cd  u0 {1,S} {4,D}
-3 *3 Cd  u0 {1,D} {7,[S,D,T,B,Q]}
-4 *6 Cd  u0 {2,D}
-5 *1 Cd  u0 {6,[D,T]} {8,[S,D,T,B,Q]}
-6 *2 Cd  u0 {5,[D,T]}
-7    C   ux {3,[S,D,T,B,Q]}
-8    C   ux {5,[S,D,T,B,Q]} {9,[S,D,T,B,Q]}
-9    R!H ux {8,[S,D,T,B,Q]}
+2 *5 Cd  u0 {1,S} {6,D}
+3 *3 Cd  u0 {1,D} {8,[S,D,T,B,Q]}
+4 *1 Cd  u0 {5,[S,D,T,B,Q]} {7,[D,T]}
+5    C   ux {4,[S,D,T,B,Q]} {9,[S,D,T,B,Q]}
+6 *6 Cd  u0 {2,D}
+7 *2 Cd  u0 {4,[D,T]}
+8    C   ux {3,[S,D,T,B,Q]}
+9    R!H ux {5,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -181,13 +181,13 @@ entry(
     group = 
 """
 1 *4 Cd u0 r0 {2,S} {3,D}
-2 *5 Cd u0 {1,S} {4,D}
-3 *3 Cd u0 {1,D} {7,S}
-4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,D}
-6 *2 Cd u0 {5,D} {8,S}
-7    C  u0 {3,S}
-8    C  u0 {6,S}
+2 *5 Cd u0 {1,S} {5,D}
+3 *3 Cd u0 {1,D} {6,S}
+4 *2 Cd u0 {7,D} {8,S}
+5 *6 Cd u0 {2,D}
+6    C  u0 {3,S}
+7 *1 Cd u0 {4,D}
+8    C  u0 {4,S}
 """,
     kinetics = None,
 )
@@ -198,14 +198,14 @@ entry(
     group = 
 """
 1 *4 Cd  u0 r0 {2,S} {3,D}
-2 *5 Cd  u0 r0 {1,S} {4,D}
-3 *3 Cd  u0 r0 {1,D} {7,S}
-4 *6 Cd  u0 r0 {2,D}
-5 *1 Cd  u0 r0 {6,D}
-6 *2 Cd  u0 r0 {5,D} {8,S}
-7    C   u0 r0 {3,S}
-8    C   u0 r0 {6,S} {9,[S,D,T,B,Q]}
-9    R!H ux {8,[S,D,T,B,Q]}
+2 *5 Cd  u0 r0 {1,S} {6,D}
+3 *3 Cd  u0 r0 {1,D} {8,S}
+4 *2 Cd  u0 r0 {5,S} {7,D}
+5    C   u0 r0 {4,S} {9,[S,D,T,B,Q]}
+6 *6 Cd  u0 r0 {2,D}
+7 *1 Cd  u0 r0 {4,D}
+8    C   u0 r0 {3,S}
+9    R!H ux {5,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -215,13 +215,13 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-5Cd-R",
     group = 
 """
-1 *4 Cd u0 r0 {2,S} {3,D}
-2 *5 Cd u0 {1,S} {4,D}
-3 *3 Cd u0 {1,D}
-4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,[D,T]} {7,[S,D,T,B,Q]}
-6 *2 Cd u0 {5,[D,T]}
-7    C  ux {5,[S,D,T,B,Q]}
+1 *4 Cd u0 r0 {2,S} {4,D}
+2 *5 Cd u0 {1,S} {5,D}
+3 *1 Cd u0 {6,[D,T]} {7,[S,D,T,B,Q]}
+4 *3 Cd u0 {1,D}
+5 *6 Cd u0 {2,D}
+6 *2 Cd u0 {3,[D,T]}
+7    C  ux {3,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -231,14 +231,14 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-5Cd-R_Ext-6COCSCdCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt-R",
     group = 
 """
-1 *4 Cd u0 r0 {2,S} {3,D}
-2 *5 Cd u0 {1,S} {4,D}
-3 *3 Cd u0 {1,D}
-4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,[D,T]} {7,[S,D,T,B,Q]}
-6 *2 Cd u0 {5,[D,T]} {8,S}
-7    C  ux {5,[S,D,T,B,Q]}
-8    C  u0 {6,S}
+1 *4 Cd u0 r0 {2,S} {5,D}
+2 *5 Cd u0 {1,S} {6,D}
+3 *1 Cd u0 {4,[D,T]} {7,[S,D,T,B,Q]}
+4 *2 Cd u0 {3,[D,T]} {8,S}
+5 *3 Cd u0 {1,D}
+6 *6 Cd u0 {2,D}
+7    C  ux {3,[S,D,T,B,Q]}
+8    C  u0 {4,S}
 """,
     kinetics = None,
 )
@@ -248,15 +248,15 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-5Cd-R_Ext-6COCSCdCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt-R_Ext-7R!H-R",
     group = 
 """
-1 *4 Cd  u0 r0 {2,S} {3,D}
-2 *5 Cd  u0 {1,S} {4,D}
-3 *3 Cd  u0 {1,D}
-4 *6 Cd  u0 {2,D}
-5 *1 Cd  u0 {6,[D,T]} {7,[S,D,T,B,Q]}
-6 *2 Cd  u0 {5,[D,T]} {8,S}
-7    C   ux {5,[S,D,T,B,Q]} {9,[S,D,T,B,Q]}
-8    C   u0 r0 {6,S}
-9    R!H ux {7,[S,D,T,B,Q]}
+1 *1 Cd  u0 {2,[D,T]} {3,[S,D,T,B,Q]}
+2 *2 Cd  u0 {1,[D,T]} {8,S}
+3    C   ux {1,[S,D,T,B,Q]} {9,[S,D,T,B,Q]}
+4 *4 Cd  u0 r0 {5,S} {6,D}
+5 *5 Cd  u0 {4,S} {7,D}
+6 *3 Cd  u0 {4,D}
+7 *6 Cd  u0 {5,D}
+8    C   u0 r0 {2,S}
+9    R!H ux {3,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -266,14 +266,14 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-5Cd-R_Ext-2CdN3dN5dcS4dS6d-R",
     group = 
 """
-1 *4 Cd  u0 r0 {2,S} {3,D}
-2 *5 Cd  u0 {1,S} {4,D} {8,[S,D,T,B,Q]}
-3 *3 Cd  u0 {1,D}
-4 *6 Cd  u0 {2,D}
-5 *1 Cd  u0 {6,[D,T]} {7,[S,D,T,B,Q]}
-6 *2 Cd  u0 {5,[D,T]}
-7    C   ux {5,[S,D,T,B,Q]}
-8    R!H ux {2,[S,D,T,B,Q]}
+1 *5 Cd  u0 {2,S} {4,D} {5,[S,D,T,B,Q]}
+2 *4 Cd  u0 r0 {1,S} {6,D}
+3 *1 Cd  u0 {7,[D,T]} {8,[S,D,T,B,Q]}
+4 *6 Cd  u0 {1,D}
+5    R!H ux {1,[S,D,T,B,Q]}
+6 *3 Cd  u0 {2,D}
+7 *2 Cd  u0 {3,[D,T]}
+8    C   ux {3,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -283,13 +283,13 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-2CdN3dN5dcS4dS6d-R",
     group = 
 """
-1 *4 Cd  u0 r0 {2,S} {3,D}
-2 *5 Cd  u0 {1,S} {4,D} {7,[S,D,T,B,Q]}
-3 *3 Cd  u0 {1,D}
-4 *6 Cd  u0 {2,D}
-5 *1 Cd  u0 {6,[D,T]}
-6 *2 Cd  u0 {5,[D,T]}
-7    R!H ux {2,[S,D,T,B,Q]}
+1 *5 Cd  u0 {2,S} {3,D} {4,[S,D,T,B,Q]}
+2 *4 Cd  u0 r0 {1,S} {5,D}
+3 *6 Cd  u0 {1,D}
+4    R!H ux {1,[S,D,T,B,Q]}
+5 *3 Cd  u0 {2,D}
+6 *1 Cd  u0 {7,[D,T]}
+7 *2 Cd  u0 {6,[D,T]}
 """,
     kinetics = None,
 )
@@ -299,13 +299,13 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-1CdN3dN5dcS4dS6d-R",
     group = 
 """
-1 *4 Cd u0 r0 {2,S} {3,D} {7,S}
-2 *5 Cd u0 {1,S} {4,D}
+1 *4 Cd u0 r0 {2,S} {3,D} {4,S}
+2 *5 Cd u0 {1,S} {5,D}
 3 *3 Cd u0 {1,D}
-4 *6 Cd u0 {2,D}
-5 *1 Cd u0 {6,D}
-6 *2 Cd u0 {5,D}
-7    C  u0 {1,S}
+4    C  u0 {1,S}
+5 *6 Cd u0 {2,D}
+6 *1 Cd u0 {7,D}
+7 *2 Cd u0 {6,D}
 """,
     kinetics = None,
 )
@@ -315,14 +315,14 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-1CdN3dN5dcS4dS6d-R_Ext-6COCSCdCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt-R",
     group = 
 """
-1 *4 Cd  u0 r0 {2,S} {3,D} {7,S}
-2 *5 Cd  u0 r0 {1,S} {4,D}
-3 *3 Cd  u0 r0 {1,D}
-4 *6 Cd  u0 r0 {2,D}
-5 *1 Cd  u0 r0 {6,D}
-6 *2 Cd  u0 r0 {5,D} {8,[S,D,T,B,Q]}
-7    C   u0 r0 {1,S}
-8    R!H ux {6,[S,D,T,B,Q]}
+1 *4 Cd  u0 r0 {2,S} {4,D} {5,S}
+2 *5 Cd  u0 r0 {1,S} {6,D}
+3 *2 Cd  u0 r0 {7,D} {8,[S,D,T,B,Q]}
+4 *3 Cd  u0 r0 {1,D}
+5    C   u0 r0 {1,S}
+6 *6 Cd  u0 r0 {2,D}
+7 *1 Cd  u0 r0 {3,D}
+8    R!H ux {3,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )
@@ -332,13 +332,13 @@ entry(
     label = "Root_5COCSCdCddCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt->Cd_N-1CdN3dN5dcS4dS6d-inRing_Ext-6COCSCdCtN3dN3tN5dcN5tcO2dS2dS4dS4tS6dS6tS6tdS6tt-R",
     group = 
 """
-1 *4 Cd  u0 r0 {2,S} {3,D}
-2 *5 Cd  u0 {1,S} {4,D}
-3 *3 Cd  u0 {1,D}
-4 *6 Cd  u0 {2,D}
-5 *1 Cd  u0 {6,[D,T]}
-6 *2 Cd  u0 {5,[D,T]} {7,[S,D,T,B,Q]}
-7    R!H ux {6,[S,D,T,B,Q]}
+1 *4 Cd  u0 r0 {2,S} {4,D}
+2 *5 Cd  u0 {1,S} {5,D}
+3 *2 Cd  u0 {6,[D,T]} {7,[S,D,T,B,Q]}
+4 *3 Cd  u0 {1,D}
+5 *6 Cd  u0 {2,D}
+6 *1 Cd  u0 {3,[D,T]}
+7    R!H ux {3,[S,D,T,B,Q]}
 """,
     kinetics = None,
 )

@@ -196,18 +196,6 @@ multiplicity 3
 3    H u0 p0 c0 {1,S}
 4    H u0 p0 c0 {1,S}
 
-HO2
-multiplicity 2
-1    O u0 p2 c0 {2,S} {3,S}
-2 *3 O u1 p2 c0 {1,S}
-3    H u0 p0 c0 {1,S}
-
-BrHO2
-1 *2 Br u0 p3 c0 {3,S}
-2    O  u0 p2 c0 {3,S} {4,S}
-3 *3 O  u0 p2 c0 {1,S} {2,S}
-4    H  u0 p0 c0 {2,S}
-
 C2H4BrO
 multiplicity 2
 1 *2 Br u0 p3 c0 {4,S}
@@ -519,20 +507,6 @@ multiplicity 2
 1 *1 O u1 p2 c0 {2,S}
 2    H u0 p0 c0 {1,S}
 
-CBr2F2-2
-1 *2 Br u0 p3 c0 {5,S}
-2    Br u0 p3 c0 {5,S}
-3    F  u0 p3 c0 {5,S}
-4    F  u0 p3 c0 {5,S}
-5 *1 C  u0 p0 c0 {1,S} {2,S} {3,S} {4,S}
-
-CBrF2-2
-multiplicity 2
-1    Br u0 p3 c0 {4,S}
-2    F  u0 p3 c0 {4,S}
-3    F  u0 p3 c0 {4,S}
-4 *1 C  u1 p0 c0 {1,S} {2,S} {3,S}
-
 C2H3BrF2
 1 *2 Br u0 p3 c0 {5,S}
 2    F  u0 p3 c0 {4,S}
@@ -735,6 +709,13 @@ multiplicity 2
 6 *3 C u1 p0 c0 {4,S} {5,D}
 7    H u0 p0 c0 {5,S}
 8    H u0 p0 c0 {5,S}
+
+CBr2F2-2
+1 *2 Br u0 p3 c0 {5,S}
+2    Br u0 p3 c0 {5,S}
+3    F  u0 p3 c0 {5,S}
+4    F  u0 p3 c0 {5,S}
+5 *1 C  u0 p0 c0 {1,S} {2,S} {3,S} {4,S}
 
 CClF2-2
 multiplicity 2

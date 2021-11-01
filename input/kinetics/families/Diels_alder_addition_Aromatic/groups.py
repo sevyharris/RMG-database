@@ -47,13 +47,13 @@ entry(
     label = "Root_Ext-1CbCbf-R",
     group = 
 """
-1 *4 [Cb,Cbf] u0 {2,[S,B]} {3,[D,B]} {7,[S,D,T,B,Q]}
-2 *5 [Cb,Cbf] u0 {1,[S,B]} {4,[D,B]}
+1 *4 [Cb,Cbf] u0 {2,[S,B]} {3,[D,B]} {4,[S,D,T,B,Q]}
+2 *5 [Cb,Cbf] u0 {1,[S,B]} {5,[D,B]}
 3 *3 [Cb,Cbf] u0 {1,[D,B]}
-4 *6 Cb       u0 {2,[D,B]}
-5 *1 Ct       u0 {6,T}
-6 *2 Ct       u0 {5,T}
-7    C        ux {1,[S,D,T,B,Q]}
+4    C        ux {1,[S,D,T,B,Q]}
+5 *6 Cb       u0 {2,[D,B]}
+6 *1 Ct       u0 {7,T}
+7 *2 Ct       u0 {6,T}
 """,
     kinetics = None,
 )
@@ -63,13 +63,13 @@ entry(
     label = "Root_Ext-1CbCbf-R_1CbCbf->Cb",
     group = 
 """
-1 *4 Cb       u0 r1 {2,[S,B]} {3,[D,B]} {7,B}
-2 *5 [Cb,Cbf] u0 r1 {1,[S,B]} {4,[D,B]}
+1 *4 Cb       u0 r1 {2,[S,B]} {3,[D,B]} {4,B}
+2 *5 [Cb,Cbf] u0 r1 {1,[S,B]} {5,[D,B]}
 3 *3 [Cb,Cbf] u0 r1 {1,[D,B]}
-4 *6 Cb       u0 r1 {2,[D,B]}
-5 *1 Ct       u0 r0 {6,T}
-6 *2 Ct       u0 r0 {5,T}
-7    C        u0 r1 {1,B}
+4    C        u0 r1 {1,B}
+5 *6 Cb       u0 r1 {2,[D,B]}
+6 *1 Ct       u0 r0 {7,T}
+7 *2 Ct       u0 r0 {6,T}
 """,
     kinetics = None,
 )
@@ -79,13 +79,13 @@ entry(
     label = "Root_Ext-1CbCbf-R_N-1CbCbf->Cb",
     group = 
 """
-1 *4 Cbf      u0 {2,B} {3,B} {7,[S,D,T,B,Q]}
-2 *5 [Cb,Cbf] u0 {1,B} {4,B}
+1 *4 Cbf      u0 {2,B} {3,B} {4,[S,D,T,B,Q]}
+2 *5 [Cb,Cbf] u0 {1,B} {5,B}
 3 *3 [Cb,Cbf] u0 {1,B}
-4 *6 Cb       u0 {2,B}
-5 *1 Ct       u0 {6,T}
-6 *2 Ct       u0 {5,T}
-7    C        ux {1,[S,D,T,B,Q]}
+4    C        ux {1,[S,D,T,B,Q]}
+5 *6 Cb       u0 {2,B}
+6 *1 Ct       u0 {7,T}
+7 *2 Ct       u0 {6,T}
 """,
     kinetics = None,
 )
@@ -95,13 +95,13 @@ entry(
     label = "Root_Ext-1CbCbf-R_N-1CbCbf->Cb_2CbCbf->Cb",
     group = 
 """
-1 *4 Cbf      u0 r1 {2,B} {3,B} {7,[S,D,T,B,Q]}
-2 *5 Cb       u0 r1 {1,B} {4,B}
+1 *4 Cbf      u0 r1 {2,B} {3,B} {4,[S,D,T,B,Q]}
+2 *5 Cb       u0 r1 {1,B} {5,B}
 3 *3 [Cb,Cbf] u0 r1 {1,B}
-4 *6 Cb       u0 r1 {2,B}
-5 *1 Ct       u0 {6,T}
-6 *2 Ct       u0 {5,T}
-7    C        ux r1 {1,[S,D,T,B,Q]}
+4    C        ux r1 {1,[S,D,T,B,Q]}
+5 *6 Cb       u0 r1 {2,B}
+6 *1 Ct       u0 {7,T}
+7 *2 Ct       u0 {6,T}
 """,
     kinetics = None,
 )
@@ -111,13 +111,13 @@ entry(
     label = "Root_Ext-1CbCbf-R_N-1CbCbf->Cb_N-2CbCbf->Cb",
     group = 
 """
-1 *4 Cbf      u0 r1 {2,B} {3,B} {7,[S,D,T,B,Q]}
-2 *5 Cbf      u0 r1 {1,B} {4,B}
+1 *4 Cbf      u0 r1 {2,B} {3,B} {4,[S,D,T,B,Q]}
+2 *5 Cbf      u0 r1 {1,B} {5,B}
 3 *3 [Cb,Cbf] u0 r1 {1,B}
-4 *6 Cb       u0 r1 {2,B}
-5 *1 Ct       u0 {6,T}
-6 *2 Ct       u0 {5,T}
-7    C        ux r1 {1,[S,D,T,B,Q]}
+4    C        ux r1 {1,[S,D,T,B,Q]}
+5 *6 Cb       u0 r1 {2,B}
+6 *1 Ct       u0 {7,T}
+7 *2 Ct       u0 {6,T}
 """,
     kinetics = None,
 )
@@ -159,13 +159,13 @@ entry(
 """
 1 *4 Cb u0 r1 {2,B} {3,B}
 2 *5 Cb u0 r1 {1,B} {4,B}
-3 *3 Cb u0 r1 {1,B} {7,B}
-4 *6 Cb u0 r1 {2,B} {9,B}
-5 *1 Ct u0 r0 {6,T}
-6 *2 Ct u0 r0 {5,T}
-7    C  u0 r1 {3,B} {8,B}
-8    C  u0 r1 {7,B}
-9    C  u0 r1 {4,B}
+3 *3 Cb u0 r1 {1,B} {5,B}
+4 *6 Cb u0 r1 {2,B} {7,B}
+5    C  u0 r1 {3,B} {6,B}
+6    C  u0 r1 {5,B}
+7    C  u0 r1 {4,B}
+8 *1 Ct u0 r0 {9,T}
+9 *2 Ct u0 r0 {8,T}
 """,
     kinetics = None,
 )
