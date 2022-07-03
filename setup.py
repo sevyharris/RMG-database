@@ -5,7 +5,7 @@
 #                                                                             #
 # RMG - Reaction Mechanism Generator                                          #
 #                                                                             #
-# Copyright (c) 2002-2019 Prof. William H. Green (whgreen@mit.edu),           #
+# Copyright (c) 2002-2022 Prof. William H. Green (whgreen@mit.edu),           #
 # Prof. Richard H. West (r.west@neu.edu) and the RMG Team (rmg_dev@mit.edu)   #
 #                                                                             #
 # Permission is hereby granted, free of charge, to any person obtaining a     #
@@ -45,7 +45,7 @@ scripts = ['scripts/' + scriptName for scriptName in scripts]
 # Initiate the installation and/or build 
 setup(
     name='RMG-database',
-    version='3.1.0',
+    version='3.2.0',
     description='Reaction Mechanism Generator Database',
     author='William H. Green and the RMG Team',
     author_email='rmg_dev@mit.edu',
