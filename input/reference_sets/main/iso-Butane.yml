@@ -15,6 +15,90 @@ adjacency_list: |
   13 H u0 p0 c0 {4,S}
   14 H u0 p0 c0 {4,S}
 calculated_data:
+  ? CompositeLevelOfTheory(freq=LevelOfTheory(method='m062x',basis='ccpvtz',software='gaussian'),energy=LevelOfTheory(method='dlpnoccsd(t)f122023',basis='ccpvtzf12',software='orca'))
+  : class: CalculatedDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        units: kcal/mol
+        value: -34.33646857294252
+      class: ThermoData
+    xyz_dict:
+      coords:
+        class: np_array
+        object:
+        - - 0.040718
+          - -0.182085
+          - 0.369762
+        - - -1.331545
+          - -0.540781
+          - -0.190694
+        - - 1.147133
+          - -0.701326
+          - -0.54245
+        - - 0.165868
+          - 1.325424
+          - 0.563907
+        - - 0.148164
+          - -0.662963
+          - 1.346147
+        - - -2.131374
+          - -0.190731
+          - 0.462785
+        - - -1.471843
+          - -0.075944
+          - -1.169592
+        - - -1.440647
+          - -1.618799
+          - -0.314226
+        - - 1.07959
+          - -1.781911
+          - -0.673001
+        - - 1.069207
+          - -0.239525
+          - -1.529732
+        - - 2.134267
+          - -0.468205
+          - -0.141803
+        - - 1.136806
+          - 1.592628
+          - 0.982447
+        - - 0.062186
+          - 1.838834
+          - -0.395063
+        - - -0.608329
+          - 1.705382
+          - 1.231413
+      isotopes:
+      - 12
+      - 12
+      - 12
+      - 12
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      symbols:
+      - C
+      - C
+      - C
+      - C
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
   ? CompositeLevelOfTheory(freq=LevelOfTheory(method='wb97xd3',basis='def2tzvp',software='qchem'),energy=LevelOfTheory(method='ccsd(t)f12',basis='ccpvdzf12',software='molpro'))
   : class: CalculatedDataEntry
     thermo_data:
