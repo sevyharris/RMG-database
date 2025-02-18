@@ -1785,29 +1785,60 @@ pbac = {
         "S-S": -1.3276149373182218,
         "S=S": -5.902725217701505,
     },
-    # Job 1: Petersson-type BACs:  Sevy Harris
-    # Training RMSE/MAE before fitting: 1.17/0.95 kcal/mol
-    # Training RMSE/MAE after fitting: 0.51/0.35 kcal/mol
+
+    # Job 1: Petersson-type BACs: Sevy Harris, 20250212
+    # Training RMSE/MAE before fitting: 1.25/1.03 kcal/mol
+    # Training RMSE/MAE after fitting: 0.55/0.36 kcal/mol
     "CompositeLevelOfTheory(freq=LevelOfTheory(method='m062x',basis='ccpvtz',software='gaussian'),energy=LevelOfTheory(method='dlpnoccsd(t)f122023',basis='ccpvtzf12',software='orca'))": {
-        'C#C': -0.8113140477670981,
-        'C#N': -0.4343785541847265,
+        'C#C': -0.8064621799937185,
         'C#O': 0.22440350897737815,
-        'C-C': -0.08108284171399482,
-        'C-H': 0.266782840196064,
-        'C-N': -0.023560428894509357,
-        'C-O': 0.11210967033662411,
-        'C=C': -0.4244222791223823,
-        'C=N': 0.021802435696178728,
-        'C=O': -0.6811900116295874,
+        'C-C': -0.12370093339710478,
+        'C-H': 0.28093509033262254,
+        'C-O': 0.08912033219882363,
+        'C=C': -0.46446898934762926,
+        'C=O': -0.6848084999290655,
         'H-H': -0.2022236607678929,
-        'H-N': 0.15656918089357086,
-        'H-O': -0.14329556453562567,
-        'N-N': 0.055902363837322076,
-        'N-O': -0.10216782269552892,
-        'N=N': -0.09416944476845938,
-        'N=O': -0.5461082290056509,
-        'O-O': -0.3850777544168714
+        'H-O': -0.12280148665477908,
+        'O-O': -0.4022839144276467
     },
+    # 95% Confidence interval half-widths:
+    # {
+    #     'C#C': 0.5092764930695555,
+    #     'C#O': 1.2177545190113581,
+    #     'C-C': 0.37760358661611115,
+    #     'C-H': 0.11781702092312599,
+    #     'C-O': 0.35310369008454795,
+    #     'C=C': 0.31314893711599423,
+    #     'C=O': 0.418888068016608,
+    #     'H-H': 1.2177545190113581,
+    #     'H-O': 0.3360935638285862,
+    #     'O-O': 0.5651961660308058
+    # }
+
+
+    # # Job 1: Petersson-type BACs:  Sevy Harris  pre-2/12/2025
+    # # Training RMSE/MAE before fitting: 1.17/0.95 kcal/mol
+    # # Training RMSE/MAE after fitting: 0.51/0.35 kcal/mol
+    # "CompositeLevelOfTheory(freq=LevelOfTheory(method='m062x',basis='ccpvtz',software='gaussian'),energy=LevelOfTheory(method='dlpnoccsd(t)f122023',basis='ccpvtzf12',software='orca'))": {
+    #     'C#C': -0.8113140477670981,
+    #     'C#N': -0.4343785541847265,
+    #     'C#O': 0.22440350897737815,
+    #     'C-C': -0.08108284171399482,
+    #     'C-H': 0.266782840196064,
+    #     'C-N': -0.023560428894509357,
+    #     'C-O': 0.11210967033662411,
+    #     'C=C': -0.4244222791223823,
+    #     'C=N': 0.021802435696178728,
+    #     'C=O': -0.6811900116295874,
+    #     'H-H': -0.2022236607678929,
+    #     'H-N': 0.15656918089357086,
+    #     'H-O': -0.14329556453562567,
+    #     'N-N': 0.055902363837322076,
+    #     'N-O': -0.10216782269552892,
+    #     'N=N': -0.09416944476845938,
+    #     'N=O': -0.5461082290056509,
+    #     'O-O': -0.3850777544168714
+    # },
 }
 
 # Melius-type bond additivity correction parameters
