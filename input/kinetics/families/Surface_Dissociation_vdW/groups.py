@@ -292,6 +292,38 @@ No rule for O-O breaking available
 )
 
 forbidden(
+    label = "N+*1",
+    group =
+"""
+1 *1 N  u0 p0 c+1 {2,D} {3,D}
+2 *2 R  ux px {1,D}
+3    R  ux px {1,D}
+4 *3 Xv u0 p0 c0
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+No rule for N+ bond breaking (*1) available
+""",
+)
+
+forbidden(
+    label = "N+*2",
+    group =
+"""
+1 *1 R  ux px {2,D}
+2 *2 N  u0 p0 c+1 {1,D} {3,D}
+3    R  ux px {2,D}
+4 *3 Xv u0 p0 c0
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+No rule for N+ bond breaking (*1) available
+""",
+)
+
+forbidden(
     label = "H-C",
     group =
 """
