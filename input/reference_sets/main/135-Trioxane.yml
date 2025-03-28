@@ -13,6 +13,80 @@ adjacency_list: |
   11 H u0 p0 c0 {6,S}
   12 H u0 p0 c0 {6,S}
 calculated_data:
+  ? CompositeLevelOfTheory(freq=LevelOfTheory(method='m062x',basis='ccpvtz',software='gaussian'),energy=LevelOfTheory(method='dlpnoccsd(t)f122023',basis='ccpvtzf12',software='orca'))
+  : class: CalculatedDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        units: kcal/mol
+        value: -112.69500882169932
+      class: ThermoData
+    xyz_dict:
+      coords:
+        class: np_array
+        object:
+        - - 1.232789
+          - -0.51261
+          - -0.264542
+        - - 1.051581
+          - 0.80447
+          - 0.177342
+        - - -0.172275
+          - 1.323755
+          - -0.264743
+        - - -1.222391
+          - 0.508321
+          - 0.177069
+        - - -1.060131
+          - -0.811247
+          - -0.264738
+        - - 0.17108
+          - -1.312833
+          - 0.177353
+        - - 1.844686
+          - 1.411279
+          - -0.246524
+        - - 1.083552
+          - 0.829054
+          - 1.278014
+        - - -1.259977
+          - 0.523927
+          - 1.277723
+        - - -2.144289
+          - 0.891734
+          - -0.247151
+        - - 0.176187
+          - -1.352826
+          - 1.278024
+        - - 0.300153
+          - -2.303058
+          - -0.24652
+      isotopes:
+      - 16
+      - 12
+      - 16
+      - 12
+      - 16
+      - 12
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      symbols:
+      - O
+      - C
+      - O
+      - C
+      - O
+      - C
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
   ? CompositeLevelOfTheory(freq=LevelOfTheory(method='wb97xd3',basis='def2tzvp',software='qchem'),energy=LevelOfTheory(method='ccsd(t)f12',basis='ccpvdzf12',software='molpro'))
   : class: CalculatedDataEntry
     thermo_data:
@@ -685,7 +759,7 @@ calculated_data:
       H298:
         class: ScalarQuantity
         units: kcal/mol
-        value: -103.73951778372981
+        value: -103.73951778372978
       class: ThermoData
     xyz_dict:
       coords:

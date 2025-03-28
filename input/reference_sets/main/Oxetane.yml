@@ -11,6 +11,70 @@ adjacency_list: |
   9  H u0 p0 c0 {4,S}
   10 H u0 p0 c0 {4,S}
 calculated_data:
+  ? CompositeLevelOfTheory(freq=LevelOfTheory(method='m062x',basis='ccpvtz',software='gaussian'),energy=LevelOfTheory(method='dlpnoccsd(t)f122023',basis='ccpvtzf12',software='orca'))
+  : class: CalculatedDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        units: kcal/mol
+        value: -20.180416862939474
+      class: ThermoData
+    xyz_dict:
+      coords:
+        class: np_array
+        object:
+        - - 0.220107
+          - -1.314777
+          - 0.116374
+        - - -0.122625
+          - 0.780964
+          - -0.123954
+        - - 1.055353
+          - -0.150613
+          - 0.19841
+        - - -0.950315
+          - -0.512544
+          - -0.098302
+        - - -0.066001
+          - 1.263271
+          - -1.095342
+        - - -0.367435
+          - 1.517122
+          - 0.635695
+        - - 1.480533
+          - -0.031408
+          - 1.196683
+        - - 1.861062
+          - -0.178003
+          - -0.535669
+        - - -1.457561
+          - -0.777172
+          - -1.026663
+        - - -1.653018
+          - -0.596841
+          - 0.732666
+      isotopes:
+      - 16
+      - 12
+      - 12
+      - 12
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      symbols:
+      - O
+      - C
+      - C
+      - C
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
   ? CompositeLevelOfTheory(freq=LevelOfTheory(method='wb97xd3',basis='def2tzvp',software='qchem'),energy=LevelOfTheory(method='ccsd(t)f12',basis='ccpvdzf12',software='molpro'))
   : class: CalculatedDataEntry
     thermo_data:
@@ -593,7 +657,7 @@ calculated_data:
       H298:
         class: ScalarQuantity
         units: kcal/mol
-        value: -12.642394397651547
+        value: -12.642394397651543
       class: ThermoData
     xyz_dict:
       coords:
@@ -721,7 +785,7 @@ calculated_data:
       H298:
         class: ScalarQuantity
         units: kcal/mol
-        value: -18.117176279598155
+        value: -18.117176279598148
       class: ThermoData
     xyz_dict:
       coords:
