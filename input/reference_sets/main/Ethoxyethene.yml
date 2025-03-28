@@ -14,6 +14,85 @@ adjacency_list: |
   12 H u0 p0 c0 {5,S}
   13 H u0 p0 c0 {5,S}
 calculated_data:
+  ? CompositeLevelOfTheory(freq=LevelOfTheory(method='m062x',basis='ccpvtz',software='gaussian'),energy=LevelOfTheory(method='dlpnoccsd(t)f122023',basis='ccpvtzf12',software='orca'))
+  : class: CalculatedDataEntry
+    thermo_data:
+      H298:
+        class: ScalarQuantity
+        units: kcal/mol
+        value: -34.88239677002373
+      class: ThermoData
+    xyz_dict:
+      coords:
+        class: np_array
+        object:
+        - - 0.578909
+          - 0.683667
+          - 0.514426
+        - - -0.702594
+          - 0.989429
+          - -0.007671
+        - - -1.002411
+          - 2.433337
+          - 0.316372
+        - - 1.024878
+          - -0.573658
+          - 0.32194
+        - - 0.409038
+          - -1.572003
+          - -0.301203
+        - - -1.442823
+          - 0.318827
+          - 0.439607
+        - - -0.701869
+          - 0.815562
+          - -1.088173
+        - - -0.254946
+          - 3.085451
+          - -0.132292
+        - - -0.994832
+          - 2.589447
+          - 1.393792
+        - - -1.982835
+          - 2.709568
+          - -0.069175
+        - - 2.007596
+          - -0.695484
+          - 0.758864
+        - - 0.909771
+          - -2.524805
+          - -0.368124
+        - - -0.569414
+          - -1.483175
+          - -0.746784
+      isotopes:
+      - 16
+      - 12
+      - 12
+      - 12
+      - 12
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      symbols:
+      - O
+      - C
+      - C
+      - C
+      - C
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
+      - H
   ? CompositeLevelOfTheory(freq=LevelOfTheory(method='wb97xd3',basis='def2tzvp',software='qchem'),energy=LevelOfTheory(method='ccsd(t)f12',basis='ccpvdzf12',software='molpro'))
   : class: CalculatedDataEntry
     thermo_data:
@@ -810,7 +889,7 @@ calculated_data:
       H298:
         class: ScalarQuantity
         units: kcal/mol
-        value: -29.77914651763031
+        value: -29.779146517630302
       class: ThermoData
     xyz_dict:
       coords:
