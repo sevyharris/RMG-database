@@ -120,7 +120,7 @@ surface = {
     'Surface_vdW_to_Bidentate',
     'Surface_Adsorption_Dissociative_Double',
     'Surface_Abstraction_Beta',
-    'Surface_Abstraction_Beta_double_vdW',
+    # 'Surface_Abstraction_Beta_double_vdW',
     'Surface_Dissociation_Double',
     'Surface_Dissociation_Beta_vdW',
     'Surface_Abstraction_Beta_vdW',
