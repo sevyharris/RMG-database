@@ -2782,3 +2782,22 @@ u"""
 
 """,
 )
+
+
+forbidden(
+label = "trioxidanyl_singletO2precursor",
+group =
+"""
+multiplicity [2]
+1 * O u0 p2 c0 {2,S} {3,S}
+2 * O u0 p2 c0 {1,S} {4,S}
+3   O u1 p2 c0 {1,S}
+4   H u0 p0 c0 {2,S}
+
+""",
+    shortDesc = u"""""",
+    longDesc =
+u"""
+
+""",
+)
